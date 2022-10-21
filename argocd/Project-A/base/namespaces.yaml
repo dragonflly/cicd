@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: env-dev
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: env-stage
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: env-prod
+

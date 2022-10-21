@@ -1,0 +1,31 @@
+{{- with .Values.deployment }}
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ $.Release.Name }}
+  labels:
+    app: {{ $.Release.Name }}
+    env: {{ $.Values.envLabel }}
+spec:
+  selector:
+    matchLabels:
+      app: {{ $.Release.Name }}
+      env: {{ $.Values.envLabel }}
+  template:
+    metadata:
+      labels:
+        app: {{ $.Release.Name }}
+        env: {{ $.Values.envLabel }}
+    spec:
+      containers:
+        - name: {{ $.Release.Name }}
+          image: {{ .ecrRepo }}/{{ .imageName }}:{{ .imageTag }}
+          ports:
+            - containerPort: 8080
+              protocol: TCP
+          resources:
+            limits:
+              cpu: 500m
+            requests:
+              cpu: 200m
+{{- end }}

@@ -1,0 +1,7 @@
+<com.cloudbees.plugins.credentials.impl.UsernamePasswordCredentialsImpl>
+  <scope>GLOBAL</scope>
+  <id>DockerHub-UP</id> 
+  <username>ninghandockerid</username>
+  <password>dckr_pat_HIPo8IixCAk1oXA_N7a5HIq2iPI</password>
+  <description>dockerhub username and token</description>
+</com.cloudbees.plugins.credentials.impl.UsernamePasswordCredentialsImpl>

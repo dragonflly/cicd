@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: stage-microservice-3
+  namespace: argocd
+spec:
+  destination:
+    namespace: env-stage
+    server: "https://kubernetes.default.svc"
+  project: env-stage
+  source:
+    path: helm/Project-A/templates-1/
+    repoURL: "https://github.com/dragonflly/cicd.git"
+    targetRevision: stage
+    helm:
+      releaseName: ms-3
+      valueFiles:
+      - values.yaml
+      - ../microservice-3/values-stage.yaml
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

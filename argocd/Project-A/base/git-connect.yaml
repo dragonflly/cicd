@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: git-repo-https
+  namespace: argocd
+  labels:
+    argocd.argoproj.io/secret-type: repository
+stringData:
+  type: git
+  url: https://github.com/dragonflly/cicd.git
+  password: ghp_H11PU2mTQ9zA0Pv0VNk7h9CRRpEOr71IodtW
+  username: dragonflly

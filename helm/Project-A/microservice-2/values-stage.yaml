@@ -1,0 +1,17 @@
+envLabel: stage
+
+deployment:
+  imageName: microservice-2
+  imageTag: "9e7830f"
+
+service:
+  name: project-a-ms-2
+
+ingress:
+  ingresses:
+  - name: project-a-stage-ms-2
+    rules:
+    - host: app2-stage.ning-cicd.click
+      path: /
+      service: project-a-ms-2
+      serviceport: 80

@@ -1,0 +1,17 @@
+envLabel: prod
+
+deployment:
+  imageName: microservice-3
+  imageTag: "f5f6758"
+
+service:
+  name: project-a-ms-3
+
+ingress:
+  ingresses:
+  - name: project-a-prod-ms-3
+    rules:
+    - host: app3.ning-cicd.click
+      path: /
+      service: project-a-ms-3
+      serviceport: 80

@@ -1,0 +1,19 @@
+Launch Order:
+
+0. Basic-Services, basic aws services
+   terraform init
+   terraform apply -auto-approve
+
+1. EKS-Cluster, EKS cluster and node group
+   aws eks update-kubeconfig --name hr-dev-eksdemo --region us-east-1
+
+2. Bastion-Host(Optional),  ssh to EKS work nodes
+
+3. LB-Controller, Application Load Balance Controller
+4. External-DNS, AWS Route 53
+
+5. CW-Agent-Fluentbit(Optional),  add metrics and logs of EKS into CloudWatch
+
+6. tools for devops, config jekins/sonarqube/argocd
+   follow tools/readme.txt instruction
+

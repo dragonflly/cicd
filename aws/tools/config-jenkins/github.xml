@@ -1,0 +1,7 @@
+<com.cloudbees.plugins.credentials.impl.UsernamePasswordCredentialsImpl>
+  <scope>GLOBAL</scope>
+  <id>github</id> 
+  <username>dragonflly</username>
+  <password>ghp_H11PU2mTQ9zA0Pv0VNk7h9CRRpEOr71IodtW</password>
+  <description>github username and password</description>
+</com.cloudbees.plugins.credentials.impl.UsernamePasswordCredentialsImpl>

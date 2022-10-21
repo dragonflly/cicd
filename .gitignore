@@ -1,0 +1,7 @@
+Bastion-Host/private-key/creation-time-vpc-id.txt
+Bastion-Host/private-key/destroy-time-prov.txt
+terraform.tfstate
+terraform.tfstate.backup
+.terraform.tfstate.lock.info
+.terraform.lock.hcl
+.terraform

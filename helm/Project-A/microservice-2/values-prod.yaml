@@ -1,0 +1,17 @@
+envLabel: prod
+
+deployment:
+  imageName: microservice-2
+  imageTag: "ca434c6"
+
+service:
+  name: project-a-ms-2
+
+ingress:
+  ingresses:
+  - name: project-a-prod-ms-2
+    rules:
+    - host: app2.ning-cicd.click
+      path: /
+      service: project-a-ms-2
+      serviceport: 80

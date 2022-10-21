@@ -1,0 +1,19 @@
+{{- with .Values.service }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .name }}
+  labels:
+    app: {{ $.Release.Name }}
+    env: {{ $.Values.envLabel }}
+  annotations:
+    alb.ingress.kubernetes.io/healthcheck-path: /index.html
+spec:
+  type: {{ .serviceType }}
+  selector:
+    app: {{ $.Release.Name }}
+    env: {{ $.Values.envLabel }}
+  ports:
+    - port: 80
+      targetPort: 8080
+{{- end }}

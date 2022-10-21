@@ -1,0 +1,28 @@
+envLabel:
+
+deployment:
+  ecrRegistry:
+  ecrRepo: ninghandockerid
+  imageName:
+  imageTag:
+
+hpa:
+  minReplicas: 2
+  maxReplicas: 4
+  cpuUtilization: 80
+
+service:
+  serviceType: NodePort
+
+ingress:
+  enabled: true
+  ingresses:
+  - name:
+    limitRps: 100
+    proxyBodySize: 10m
+    serverSnippets: []
+    configurationSnippets: []
+    rewriteTarget:
+    rules:
+    - host:
+      path:

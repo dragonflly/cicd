@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: dev-microservice-1
+  namespace: argocd
+spec:
+  destination:
+    namespace: env-dev
+    server: "https://kubernetes.default.svc"
+  project: env-dev
+  source:
+    path: helm/Project-A/templates-1/
+    repoURL: "https://github.com/dragonflly/cicd.git"
+    targetRevision: dev
+    helm:
+      releaseName: ms-1
+      valueFiles:
+      - values.yaml
+      - ../microservice-1/values-dev.yaml
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
