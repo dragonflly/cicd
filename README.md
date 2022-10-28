@@ -3,8 +3,8 @@
 ![cicd flow](images/cicd-flow.png)
 
 ### Components
-Jenkins build DSL pipeline  
-Jenkins deploy DSL pipeline  
+Jenkins build pipeline  
+Jenkins deploy pipeline  
 AWS Kubernetes Cluster (EKS)  
 ArgoCD  
 Sonarqube  
