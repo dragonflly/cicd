@@ -3,7 +3,8 @@
 ![cicd flow](images/cicd-flow.png)
 
 ### Components
-Jenkins CI/CD pipeline (Jenkins build, Jenkins deploy)  
+Jenkins build pipeline  
+Jenkins deploy Jenkins  
 AWS Kubernetes Cluster (EKS)  
 ArgoCD  
 Sonarqube  
