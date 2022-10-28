@@ -4,9 +4,9 @@ folder('Build-Project-A') {
 }
 
 MicroServices = [
-    ["name": "microservice-1", "repo": "https://github.com/dragonflly/microservice-1.git", "owner": ""],
-    ["name": "microservice-2", "repo": "https://github.com/dragonflly/microservice-2.git", "owner": ""],
-    ["name": "microservice-3", "repo": "https://github.com/dragonflly/microservice-3.git", "owner": ""],
+    ["name": "microservice-1", "repo": "https://github.com/dragonflly/ms-1.git", "owner": ""],
+    ["name": "microservice-2", "repo": "https://github.com/dragonflly/ms-2.git", "owner": ""],
+    ["name": "microservice-3", "repo": "https://github.com/dragonflly/ms-3.git", "owner": ""],
 ]
 
 for (job in MicroServices) {

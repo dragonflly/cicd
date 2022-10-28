@@ -1,3 +1,0 @@
-[submodule "jenkinsPipeline"]
-	path = jenkinsPipeline
-	url = https://github.com/dragonflly/jenkinsPipeline.git
