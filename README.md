@@ -3,7 +3,13 @@
 ![cicd flow](images/cicd-flow.png)
 
 ### Components
-Jenkins, Kubernetes, AWS, ArgoCD, Sonarqube, github, dockerhub, DynamoDB
+Jenkins CI/CD pipeline  
+AWS Kubernetes Cluseter (EKS)  
+ArgoCD  
+Sonarqube  
+Github repo 
+Dockerhub repo  
+AWS DynamoDB  
 
 ### Languages
 Terraform, YAML, Groovy, bash, 
