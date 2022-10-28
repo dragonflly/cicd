@@ -1,7 +1,7 @@
 # Real World CI/CD pipeline
 ### Components
-Jenkins, Kubernetes, AWS, ArgoCD, Sonarqube, github, dockerhub
+Jenkins, Kubernetes, AWS EKS cluster, ArgoCD, Sonarqube, github, dockerhub
 
 ### Languages
-Terraform, Groovy, bash
+Terraform, YAML, Groovy, bash, 
 
