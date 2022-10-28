@@ -2,7 +2,7 @@ envLabel: stage
 
 deployment:
   imageName: microservice-1
-  imageTag: "7904020"
+  imageTag: "6c9f55f"
 
 service:
   name: project-a-ms-1
