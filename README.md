@@ -1,5 +1,5 @@
 # Real World CI/CD pipeline
-### Architecture
+### CI/CD Flow
 
 ### Components
 Jenkins, Kubernetes, AWS, ArgoCD, Sonarqube, github, dockerhub, DynamoDB
