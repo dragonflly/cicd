@@ -15,9 +15,9 @@ https://github.com/dragonflly/ms-2.git
 https://github.com/dragonflly/ms-3.git  
 
 # Prerequisites
-AWS account
-Github account
-Dockerhub account
+AWS account  
+Github account  
+Dockerhub account  
 
 # Installation Instructions
 
