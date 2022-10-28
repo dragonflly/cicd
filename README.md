@@ -7,7 +7,7 @@ Jenkins CI/CD pipeline
 AWS Kubernetes Cluseter (EKS)  
 ArgoCD  
 Sonarqube  
-Github repo 
+Github repo  
 Dockerhub repo  
 AWS DynamoDB  
 
