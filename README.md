@@ -7,7 +7,7 @@ Jenkins, Kubernetes, AWS, ArgoCD, Sonarqube, github, dockerhub, DynamoDB
 ### Languages
 Terraform, YAML, Groovy, bash, 
 
-### relative repos
+### Related repos
 https://github.com/dragonflly/jenkinsPipeline.git  
 https://github.com/dragonflly/ms-1.git  
 https://github.com/dragonflly/ms-2.git  
