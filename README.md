@@ -1,5 +1,5 @@
 # Real World CI/CD pipeline
-### Flow
+### Work flow
 ![cicd flow](images/cicd-flow.png)
 
 ### Components
