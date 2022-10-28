@@ -1,7 +1,7 @@
-### Real World CI/CD pipeline
-# Components
+# Real World CI/CD pipeline
+### Components
 Jenkins, Kubernetes, AWS, ArgoCD, Sonarqube, github, dockerhub
 
-# Languages
+### Languages
 Terraform, Groovy, bash
 
