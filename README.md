@@ -1,5 +1,6 @@
 # Real World CI/CD pipeline
 ### CI/CD Flow
+![cicd flow](images/cicd-flow.png)
 
 ### Components
 Jenkins, Kubernetes, AWS, ArgoCD, Sonarqube, github, dockerhub, DynamoDB
