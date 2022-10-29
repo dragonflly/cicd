@@ -166,9 +166,30 @@ AWS steps
 Sonarqube scanner  
 
 ## 2.4 Config Sonarqube
+- Sonarqube server initial username and password: admin/admin  
+```
+http://jenkins.ning-cicd.click:9000/  
 ```
 
+- Create a sonarqube token  
+add project -> manually -> project name & dispaly name -> enter token name -> continue -> Maven  
+![create sonarqube token](images/cicd-flow.png)
+
+- Configure Sonarqube credentials on jenkins server
 ```
+https://jenkins.ning-cicd.click  
+```
+Secret text from previous step  
+
+- Add Sonarqube Server to jenkins  
+Configure System -> SonarQube servers -> check Environment variables -> Add Sonarqube  
+name: sonaqube-server (match with codes in pipeline_build.grooy)  
+URL: http://jenkins.ning-cicd.click:9000/  
+Select sonarqube credential  
+
+- Install SonarScanner  
+Global Tool Configuration -> SonarQube Scanner -> Add SonarQube Scanner -> install automatically  
+
 
 ## 2.5 Config ArgoCD
 ```
