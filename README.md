@@ -36,6 +36,7 @@ cd cicd
 ```
 
 ### 2.2.1 Create S3 bucket and DynamoDB table
+Choose your AWS region and s3 bucket name, then
 ```
 cd Basic-Services
 terraform init
