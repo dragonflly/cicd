@@ -32,15 +32,24 @@ Dockerhub account
 Clone cicd repo
 ```
 git clone https://github.com/dragonflly/cicd.git
+cd cicd
 ```
 
-### 2.2.1 Create EKS cluster
+### 2.2.1 Create S3 bucket and DynamoDB table
+```
+cd Basic-Services
+terraform init
+terraform apply -auto-approve
+cd ..
+```
 
-### 2.2.2 Create LoadBalancer Controller
+### 2.2.2 Create EKS cluster
 
-### 2.2.3 Create External DNS
+### 2.2.3 Create LoadBalancer Controller
 
-### 2.2.4 Create Jenkins and sonarqube server
+### 2.2.4 Create External DNS
+
+### 2.2.5 Create Jenkins and sonarqube server
 
 
 ## 2.3 Config Jenkins
