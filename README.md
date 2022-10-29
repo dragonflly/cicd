@@ -59,36 +59,32 @@ dckr_pat_HIPo8IixCAk1oXA_N7a5HIq2iPI
 cd Basic-Services
 terraform init
 terraform apply -auto-approve
-cd ..
 ```
 
 ### 2.2.2 Create EKS cluster
 Create Kubernetes cluster and node group, update kubeconfig.  
 It will takes about 15 minutes.
 ```
-cd EKS-Cluster
+cd ../EKS-Cluster
 terraform init
 terraform apply -auto-approve
 aws eks update-kubeconfig --name hr-dev-eksdemo --region us-east-1
-cd ..
 ```
 
 ### 2.2.3 Create LoadBalancer Controller
 Create LB Controller with Helm chart
 ```
-cd LB-Controller
+cd ../LB-Controller
 terraform init
 terraform apply -auto-approve
-cd ..
 ```
 
 ### 2.2.4 Create External DNS
 Map to AWS Router53, so kubernetes can create records in Route53 host zone
 ```
-cd External-DNS
+cd ../External-DNS
 terraform init
 terraform apply -auto-approve
-cd ..
 ```
 
 ### 2.2.5 Create Jenkins and sonarqube server
