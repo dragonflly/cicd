@@ -33,7 +33,7 @@ Github account
 Dockerhub account  
 
 ## 2.2 Create AWS resource with Terraform
-Fork and clone cicd repo
+Fork and clone your cicd repo
 ```
 git clone https://github.com/dragonflly/cicd.git
 cd cicd
