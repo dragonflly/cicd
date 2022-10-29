@@ -259,11 +259,11 @@ Write build history into AWS DynamoDB
 ![deploy](images/jenkins-deploy.png)
 
 - Deploy microservice  
-![deploy2](images/jenkins-deploy-2.png)
+![deploy2](images/jenkins-deploy-2.png)  
 Clone cicd repo  
-Change image ID
-Github push
-Create pull request if in product environment
+Change image ID  
+Github push  
+Create pull request if in product environment  
 
 ## 3.3 ArgoCD deploy
 ```
