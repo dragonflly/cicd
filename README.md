@@ -36,7 +36,21 @@ cd cicd
 ```
 
 ### 2.2.1 Create S3 bucket and DynamoDB table
-Choose your AWS region and replace s3 bucket name, then
+Choose your AWS region
+- us-east-1
+Replace s3 bucket name for remote state
+- terraform-on-eks
+Replace domain name
+- ning-cicd.click
+Replace keypair
+- cicd/aws/Bastion-Host/private-key
+- cicd/aws/tools/private-key
+Replace Github token
+- ghp_H11PU2mTQ9zA0Pv0VNk7h9CRRpEOr71IodtW
+Replace Dockerhub token
+- dckr_pat_HIPo8IixCAk1oXA_N7a5HIq2iPI
+
+Then
 ```
 cd Basic-Services
 terraform init
@@ -56,13 +70,21 @@ cd ..
 ```
 
 ### 2.2.3 Create LoadBalancer Controller
+Create LB Controller with Helm chart
 ```
-
+cd LB-Controller
+terraform init
+terraform apply -auto-approve
+cd ..
 ```
 
 ### 2.2.4 Create External DNS
+Map to AWS Router53, so kubernetes can create records in Route53 host zone
 ```
-
+cd External-DNS
+terraform init
+terraform apply -auto-approve
+cd ..
 ```
 
 ### 2.2.5 Create Jenkins and sonarqube server
