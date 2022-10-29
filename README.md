@@ -96,7 +96,7 @@ terraform apply -auto-approve
 ```
 
 ## 2.3 Config Jenkins
-### unlock jenkins server from web console
+### 2.3.1 unlock jenkins server from web console
 - ssh to jenkins server by bastion host
 ```
 ssh -i eks-terraform-key bastion-host-public-IP  
@@ -116,7 +116,7 @@ jenkins.ning-cicd.click
 - Install suggested plugins  
 
 
-### replace jenkins admin token
+### 2.3.2 replace jenkins admin token
 - Create admin token  
 admin -> configure -> API Token -> add new token  
 
@@ -128,14 +128,14 @@ cd cicd/aws/tools/config-jenkins
 
 - replace jenkins token in jenkins-CLI.sh  
 
-###  replace github token  
+### 2.3.3  replace github token  
 aws/tools/config-jenkins/GITHUB_TOKEN.xml  
 aws/tools/config-jenkins/github.xml  
 
-###  replace dockerhub token  
+### 2.3.4  replace dockerhub token  
 aws/tools/config-jenkins/DockerHub-UP.xml  
 
-### config jenkins by CLI
+### 2.3.5 config jenkins by CLI
 - download jenkins CLI  
 ```
 wget http://localhost:8080/jnlpJars/jenkins-cli.jar  
