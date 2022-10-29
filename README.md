@@ -3,8 +3,8 @@
 ![cicd flow](images/cicd-flow.png)
 
 ### Components
-Jenkins  
-AWS Kubernetes Cluster (EKS)  
+Jenkins build pipeline, Jenkins deploy pipeline  
+AWS Kubernetes Cluster (EKS), ingress, ALB, ASG, HPA, Helm template  
 ArgoCD  
 Sonarqube  
 Github repo  
