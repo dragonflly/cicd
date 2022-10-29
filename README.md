@@ -114,15 +114,20 @@ terraform apply -auto-approve
 
 ```
 
-## 2.7 Jenkins build
+# 3 CI/CD
+## 3.1 Jenkins build
 ```
 
 ```
 
-## 2.8 Jenkins deploy
+## 3.2 Jenkins deploy
 ```
 
 ```
 
+## 3.3 ArgoCD deploy
+```
+
+```
 
 
