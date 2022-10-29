@@ -99,8 +99,8 @@ terraform apply -auto-approve
 ### 2.3.1 unlock jenkins server from web console
 - ssh to jenkins server by bastion host
 ```
-ssh -i eks-terraform-key bastion-host-public-IP  
-ssh -i eks-terraform-key jenkins-server-private-IP  
+ssh -i eks-terraform-key.pem bastion-host-public-IP  
+ssh -i eks-terraform-key.pem jenkins-server-private-IP  
 ```
 
 - Get initial password for jenkins admin  
