@@ -178,7 +178,7 @@ add project -> manually -> project name & dispaly name -> enter token name -> co
 ```
 https://jenkins.ning-cicd.click  
 ```
-Manage Jenkins -> Credentials -> Add credentials  
+&nbsp; &nbsp; &nbsp; &nbsp; Manage Jenkins -> Credentials -> Add credentials  
 &nbsp; &nbsp; &nbsp; &nbsp; Secret text is sonarqube token  
 
 - Add Sonarqube Server to jenkins  
