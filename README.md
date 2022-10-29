@@ -266,9 +266,11 @@ Github push
 Create pull request if in product environment  
 
 ## 3.3 ArgoCD deploy
-```
+- ArgoCD polling cicd repo every 3 minutes
+![argocd](images/argocd-1.png)
 
-```
+- Pods update to new docker image
+![argocd](images/argocd-2.png)
 
 ## 3.4 verify microservice from web browser
 app1.ning-cicd.click  
