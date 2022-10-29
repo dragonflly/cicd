@@ -104,17 +104,22 @@ terraform apply -auto-approve
 
 ```
 
-## 2.5 Launch microserces on EKS cluster
+## 2.5 Config ArgoCD
 ```
 
 ```
 
-## 2.6 Jenkins build
+## 2.6 Launch microserces on EKS cluster
 ```
 
 ```
 
-## 2.7 Jenkins deploy
+## 2.7 Jenkins build
+```
+
+```
+
+## 2.8 Jenkins deploy
 ```
 
 ```
