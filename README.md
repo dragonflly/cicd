@@ -118,7 +118,6 @@ jenkins.ning-cicd.click
 ### replace jenkins admin token
 - Create admin token  
 admin -> configure -> API Token -> add new token  
-![create admin token](images/cicd-flow.png)
 
 - Clone cicd repo
 ```
@@ -173,13 +172,12 @@ http://jenkins.ning-cicd.click:9000/
 
 - Create a sonarqube token  
 add project -> manually -> project name & dispaly name -> enter token name -> continue -> Maven  
-![create sonarqube token](images/cicd-flow.png)
 
 - Configure Sonarqube credentials on jenkins server
 ```
 https://jenkins.ning-cicd.click  
 ```
-Secret text from previous step  
+   Secret text from previous step  
 
 - Add Sonarqube Server to jenkins  
 Configure System -> SonarQube servers -> check Environment variables -> Add Sonarqube  
