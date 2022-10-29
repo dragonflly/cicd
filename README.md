@@ -144,7 +144,9 @@ java -jar jenkins-cli.jar -auth admin:118befc41e873f41075d9d91df39c33812 -s http
 ./jenkins-CLI.sh  
 ```
 - Check 3 new created credentials  
-![new created credentials](images/cicd-flow.png)
+github  
+GITHUB_TOKEN  
+DockerHub-UP  
 
 - Check 7 new installed plugins  
 Environment Injector  
