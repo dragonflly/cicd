@@ -3,13 +3,13 @@
 ![cicd flow](images/cicd-flow.png)
 
 ### Components
-Jenkins build pipeline, Jenkins deploy pipeline  
-AWS Kubernetes Cluster (EKS), ingress, ALB, ASG, HPA, Helm template  
+Jenkins job, Jenkins build pipeline, Jenkins deploy pipeline  
+AWS Kubernetes Cluster (EKS), Ingress, HPA, Helm template, External DNS  
+AWS DynamoDB, Route53, ALB, ASG  
 ArgoCD  
 Sonarqube  
 Github repo  
 Dockerhub repo  
-AWS DynamoDB  
 
 ### Languages
 Terraform, YAML, Groovy, bash, 
