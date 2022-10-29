@@ -1,5 +1,7 @@
 # 1 Real World CI/CD pipeline
 ## 1.1 Demonstration
+https://www.youtube.com/watch?v=kXYiU_JCYtU&list=PLeTAguQ5NROaYkrlKdWa21s9BofsHY5pL&index=57
+  
 
 ## 1.2 Work flow
 ![cicd flow](images/cicd-flow.png)
