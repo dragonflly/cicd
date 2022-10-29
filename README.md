@@ -63,7 +63,7 @@ cd ..
 ```
 
 ### 2.2.2 Create EKS cluster
-Create Kubernetes cluster and node group, update kubecofing.  
+Create Kubernetes cluster and node group, update kubeconfig.  
 It will takes about 15 minutes.
 ```
 cd EKS-Cluster
