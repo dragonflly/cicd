@@ -43,7 +43,7 @@ terraform-on-eks
 - Replace domain name  
 ning-cicd.click
 - Replace AWS EC2 instance keypair  
-cicd/aws/Bastion-Host/private-key
+cicd/aws/Bastion-Host/private-key  
 cicd/aws/tools/private-key  
 - Replace Github token  
 ghp_H11PU2mTQ9zA0Pv0VNk7h9CRRpEOr71IodtW
