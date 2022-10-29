@@ -249,15 +249,21 @@ Clone selected microservice repo
 Sonarqube scan  
 mvn build  
 Docker build  
-Login dockerhub
+Login dockerhub  
 Push docker image into dockerhub  
-Write build history into AWS DynamoDB
+Write build history into AWS DynamoDB  
 
 
 ## 3.2 Jenkins deploy
-```
+- Read selected microservice build history, choose image to deploy  
+![deploy](images/jenkins-deploy.png)
 
-```
+- Deploy microservice  
+![deploy2](images/jenkins-deploy-2.png)
+Clone cicd repo  
+Change image ID
+Github push
+Create pull request if in product environment
 
 ## 3.3 ArgoCD deploy
 ```
