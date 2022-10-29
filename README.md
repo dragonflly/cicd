@@ -95,9 +95,65 @@ terraform apply -auto-approve
 ```
 
 ## 2.3 Config Jenkins
+### ssh to jenkins server by bastion host
+```
+ssh -i eks-terraform-key bastion-host-public-IP  
+ssh -i eks-terraform-key jenkins-server-private-IP  
 ```
 
+### unlock jenkins server from web console
+- Get initial password for jenkins admin  
 ```
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword  
+```
+
+- Jenkins server address  
+```
+jenkins.ning-cicd.click  
+```
+- Install suggested plugins  
+
+### clone cicd repo
+```
+git clone https://github.com/dragonflly/cicd.git  
+cd cicd/aws/tools/config-jenkins  
+```
+
+### jenkins admin token
+- Create admin token  
+admin -> configure -> API Token -> add new token  
+![create admin token](images/cicd-flow.png)
+- replace jenkins token in jenkins-CLI.sh  
+- replace github token  
+aws/tools/config-jenkins/GITHUB_TOKEN.xml  
+aws/tools/config-jenkins/github.xml  
+- replace dockerhub token  
+aws/tools/config-jenkins/DockerHub-UP.xml  
+
+### config jenkins by CLI
+- download jenkins CLI  
+```
+wget http://localhost:8080/jnlpJars/jenkins-cli.jar  
+```
+- replace token, and restart jenkins  
+```
+java -jar jenkins-cli.jar -auth admin:118befc41e873f41075d9d91df39c33812 -s http://localhost:8080/ safe-restart  
+```
+- run scripts to config jenkins server  
+```
+./jenkins-CLI.sh  
+```
+- Check 3 new created credentials  
+![new created credentials](images/cicd-flow.png)
+
+- Check 7 new installed plugins  
+Environment Injector  
+Git Parameter  
+Job DSL  
+Active Choices  
+build user vars  
+AWS steps  
+Sonarqube scanner  
 
 ## 2.4 Config Sonarqube
 ```
