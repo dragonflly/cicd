@@ -57,7 +57,7 @@ dckr_pat_HIPo8IixCAk1oXA_N7a5HIq2iPI
 
 ### 2.2.1 Create S3 bucket and DynamoDB table
 ```
-cd Basic-Services
+cd aws/Basic-Services
 terraform init
 terraform apply -auto-approve
 ```
