@@ -172,13 +172,13 @@ http://jenkins.ning-cicd.click:9000/
 ```
 
 - Create a sonarqube token  
-add project -> manually -> project name & dispaly name -> enter token name -> continue -> Maven  
+Add project -> manually -> project name & dispaly name -> enter token name -> continue -> Maven  
 
 - Configure Sonarqube credentials on jenkins server
 ```
 https://jenkins.ning-cicd.click  
 ```
-&nbsp; &nbsp; &nbsp; &nbsp; Manage Jenkins -> Credentials -> Add credentials  
+&nbsp; &nbsp; &nbsp; &nbsp; Manage Jenkins -> Manage Credentials -> Add credentials  
 &nbsp; &nbsp; &nbsp; &nbsp; Secret text is sonarqube token just created  
 
 - Add Sonarqube Server to jenkins  
