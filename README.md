@@ -240,10 +240,19 @@ kubectl apply -f env-prod/microservice-1-prod.yaml
 
 # 3 CI/CD
 ## 3.1 Jenkins build
-Build spring boot microservice  
-```
+- Read all branches of microservice repo
+![build](images/jenkins-build.png)
 
-```
+- Build stages  
+![build2](images/jenkins-build-2.png)
+Clone selected microservice repo  
+Sonarqube scan  
+mvn build  
+Docker build  
+Login dockerhub
+Push docker image into dockerhub  
+Write build history into AWS DynamoDB
+
 
 ## 3.2 Jenkins deploy
 ```
