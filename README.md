@@ -20,10 +20,9 @@ Terraform, YAML, Groovy, bash
 https://github.com/dragonflly/jenkinsPipeline.git  
 https://github.com/dragonflly/ms-1.git  
 https://github.com/dragonflly/ms-2.git  
-
-# 2 Installation Instructions
 https://github.com/dragonflly/ms-3.git  
 
+# 2 Installation Instructions
 ## 2.1 Prerequisites
 AWS account  
 Github account  
