@@ -31,6 +31,7 @@ https://github.com/dragonflly/ms-3.git
 AWS account  
 Github account  
 Dockerhub account  
+Knowledge of AWS, Kubernetes, Terraform, Jenkins, ArgoCD
 
 ## 2.2 Create AWS resource with Terraform
 Fork and clone your cicd repo
@@ -177,7 +178,8 @@ add project -> manually -> project name & dispaly name -> enter token name -> co
 ```
 https://jenkins.ning-cicd.click  
 ```
-&nbsp; &nbsp; &nbsp; Secret text from previous step  
+Manage Jenkins -> Credentials -> Add credentials
+&nbsp; &nbsp; &nbsp; &nbsp; Secret text is sonarqube token  
 
 - Add Sonarqube Server to jenkins  
 Configure System -> SonarQube servers -> check Environment variables -> Add Sonarqube  
