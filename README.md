@@ -119,15 +119,15 @@ git clone https://github.com/dragonflly/cicd.git
 cd cicd/aws/tools/config-jenkins  
 ```
 
-### jenkins admin token
+### replace jenkins admin token
 - Create admin token  
 admin -> configure -> API Token -> add new token  
 ![create admin token](images/cicd-flow.png)
 - replace jenkins token in jenkins-CLI.sh  
-- replace github token  
+###  replace github token  
 aws/tools/config-jenkins/GITHUB_TOKEN.xml  
 aws/tools/config-jenkins/github.xml  
-- replace dockerhub token  
+###  replace dockerhub token  
 aws/tools/config-jenkins/DockerHub-UP.xml  
 
 ### config jenkins by CLI
