@@ -45,23 +45,56 @@ cd ..
 ```
 
 ### 2.2.2 Create EKS cluster
+Create Kubernetes cluster and node group, update kubecofing. 
+It will takes about 15 minutes.
+```
+cd EKS-Cluster
+terraform init
+terraform apply -auto-approve
+aws eks update-kubeconfig --name hr-dev-eksdemo --region us-east-1
+cd ..
+```
 
 ### 2.2.3 Create LoadBalancer Controller
+```
+
+```
 
 ### 2.2.4 Create External DNS
+```
+
+```
 
 ### 2.2.5 Create Jenkins and sonarqube server
+```
+
+```
 
 
 ## 2.3 Config Jenkins
+```
+
+```
 
 ## 2.4 Config Sonarqube
+```
+
+```
 
 ## 2.5 Launch microserces on EKS cluster
+```
+
+```
 
 ## 2.6 Jenkins build
+```
+
+```
 
 ## 2.7 Jenkins deploy
+```
+
+```
 
 
 
