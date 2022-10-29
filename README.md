@@ -240,6 +240,17 @@ kubectl apply -f env-prod/microservice-1-prod.yaml
 
 # 3 CI/CD
 ## 3.1 Jenkins build
+- Create jenkins pipeline by jenkins job
+Jenkins New Item -> Freestyle project -> OK  
+Source Code Management -> Git  
+```
+https://github.com/dragonflly/cicd.git
+```
+Build -> Process Job DSLs
+```
+jenkins-job/job_build.groovy
+```
+
 - Read all branches of microservice repo
 ![build](images/jenkins-build.png)
 
@@ -255,6 +266,17 @@ Write build history into AWS DynamoDB
 
 
 ## 3.2 Jenkins deploy
+- Create jenkins pipeline by jenkins job
+Jenkins New Item -> Freestyle project -> OK  
+Source Code Management -> Git  
+```
+https://github.com/dragonflly/cicd.git
+```
+Build -> Process Job DSLs
+```
+jenkins-job/job_deploy.groovy
+```
+
 - Read selected microservice build history, choose image to deploy  
 ![deploy](images/jenkins-deploy.png)
 
