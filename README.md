@@ -1,4 +1,6 @@
 # Real World CI/CD pipeline
+### Demonstration
+
 ### Work flow
 ![cicd flow](images/cicd-flow.png)
 
@@ -12,7 +14,7 @@ Dockerhub repo
 Sonarqube  
 
 ### Languages
-Terraform, YAML, Groovy, bash, 
+Terraform, YAML, Groovy, bash  
 
 ### Related repos
 https://github.com/dragonflly/jenkinsPipeline.git  
