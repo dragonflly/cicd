@@ -211,7 +211,9 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 
 ## 2.6 Launch microserces on EKS cluster  
 - Replace github toke  
+```
 argocd/Project-A/base/git-connect.yaml  
+```
 
 - Connect to github repo  
 ```
