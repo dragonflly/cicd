@@ -89,9 +89,10 @@ terraform apply -auto-approve
 
 ### 2.2.5 Create Jenkins and sonarqube server
 ```
-
+cd ../tools
+terraform init
+terraform apply -auto-approve
 ```
-
 
 ## 2.3 Config Jenkins
 ```
