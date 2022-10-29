@@ -192,7 +192,7 @@ Global Tool Configuration -> SonarQube Scanner -> Add SonarQube Scanner -> insta
 
 
 ## 2.5 Config ArgoCD
-- Deploy argocd by CLI  
+- Deploy argocd by CLI, it takes about 3 minutes  
 ```
 kubectl create namespace argocd  
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml  
@@ -204,7 +204,7 @@ kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}
 kubectl get service -n argocd  
 ```
 
-- Get default password for admin  
+- Get initial password for admin  
 ```
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo  
 ```
