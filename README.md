@@ -35,7 +35,6 @@ git clone https://github.com/dragonflly/cicd.git
 cd cicd
 ```
 
-### 2.2.1 Create S3 bucket and DynamoDB table
 - Choose your AWS region  
 us-east-1
 - Replace s3 bucket name for terraform remote state  
@@ -50,7 +49,8 @@ ghp_H11PU2mTQ9zA0Pv0VNk7h9CRRpEOr71IodtW
 - Replace Dockerhub token  
 dckr_pat_HIPo8IixCAk1oXA_N7a5HIq2iPI
 
-Then
+
+### 2.2.1 Create S3 bucket and DynamoDB table
 ```
 cd Basic-Services
 terraform init
