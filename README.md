@@ -38,11 +38,11 @@ cd cicd
 ### 2.2.1 Create S3 bucket and DynamoDB table
 - Choose your AWS region  
 us-east-1
-- Replace s3 bucket name for remote state  
+- Replace s3 bucket name for terraform remote state  
 terraform-on-eks
 - Replace domain name  
 ning-cicd.click
-- Replace keypair  
+- Replace AWS EC2 instance keypair  
 cicd/aws/Bastion-Host/private-key
 cicd/aws/tools/private-key  
 - Replace Github token  
