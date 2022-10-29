@@ -174,6 +174,7 @@ Sonarqube scanner
 
 # 3 CI/CD
 ## 3.1 Jenkins build
+Build spring boot microservice  
 ```
 
 ```
@@ -187,5 +188,11 @@ Sonarqube scanner
 ```
 
 ```
+
+## 3.4 verify microservice from web browser
+app1.ning-cicd.click  
+app1-dev.ning-cicd.click  
+app1-stage.ning-cicd.click  
+
 
 
