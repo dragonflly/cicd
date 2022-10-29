@@ -7,7 +7,7 @@
 ## 1.3 Components
 Jenkins job, Jenkins build pipeline, Jenkins deploy pipeline  
 AWS Kubernetes Cluster (EKS), Ingress, HPA, Helm template, External DNS  
-AWS DynamoDB, Route53, ALB, ASG  
+AWS DynamoDB, Route53, ALB, ASG, S3 bucket  
 ArgoCD  
 Github repo  
 Dockerhub repo  
