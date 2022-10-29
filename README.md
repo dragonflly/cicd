@@ -278,4 +278,27 @@ app1-dev.ning-cicd.click
 app1-stage.ning-cicd.click  
 
 
+# Cleanup
+```
+cd argocd/Project-A
+kubectl delete -f env-dev/microservice-1-dev.yaml  
+kubectl delete -f env-stage/microservice-1-stage.yaml  
+kubectl delete -f env-prod/microservice-1-prod.yaml
+kubectl delete -n env-dev ingress project-a-dev-ms-1
+kubectl delete -n env-dev service/project-a-ms-1 deployment.apps/ms-1 horizontalpodautoscaler.autoscaling/ms-1
+kubectl delete -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+
+cd aws/tools/
+terraform destroy -auto-approve
+
+cd ../External-DNS/
+terraform destroy -auto-approve
+
+cd ../LB-Controller/
+terraform destroy -auto-approve
+
+cd ../EKS-Cluster/
+terraform destroy -auto-approve
+```
+
 
