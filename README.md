@@ -278,7 +278,7 @@ app1-dev.ning-cicd.click
 app1-stage.ning-cicd.click  
 
 
-# Cleanup
+# 4 Cleanup
 ```
 cd argocd/Project-A
 kubectl delete -f env-dev/microservice-1-dev.yaml  
