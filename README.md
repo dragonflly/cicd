@@ -209,9 +209,31 @@ kubectl get service -n argocd
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo  
 ```
 
-## 2.6 Launch microserces on EKS cluster
+## 2.6 Launch microserces on EKS cluster  
+- Replace github toke  
+argocd/Project-A/base/git-connect.yaml  
+
+- Connect to github repo  
+```
+cd argocd/Project-A/  
+kubectl apply -f base/git-connect.yaml  
 ```
 
+- Create namespaces for all environments  
+```
+kubectl apply -f base/namespaces.yaml  
+```
+
+- Create projects for all argocd applications  
+```
+kubectl apply -f base/projects.yaml  
+```
+
+- Create microservice applications  
+```
+kubectl apply -f env-dev/microservice-1-dev.yaml  
+kubectl apply -f env-stage/microservice-1-stage.yaml  
+kubectl apply -f env-prod/microservice-1-prod.yaml  
 ```
 
 # 3 CI/CD
