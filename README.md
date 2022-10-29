@@ -29,6 +29,11 @@ Github account
 Dockerhub account  
 
 ## 2.2 Create AWS resource with Terraform
+Clone cicd repo
+```
+git clone https://github.com/dragonflly/cicd.git
+```
+
 ### 2.2.1 Create EKS cluster
 
 ### 2.2.2 Create LoadBalancer Controller
