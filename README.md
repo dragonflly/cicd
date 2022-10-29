@@ -177,7 +177,7 @@ add project -> manually -> project name & dispaly name -> enter token name -> co
 ```
 https://jenkins.ning-cicd.click  
 ```
-   Secret text from previous step  
+&nbsp; &nbsp; &nbsp; Secret text from previous step  
 
 - Add Sonarqube Server to jenkins  
 Configure System -> SonarQube servers -> check Environment variables -> Add Sonarqube  
