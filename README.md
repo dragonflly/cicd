@@ -13,12 +13,12 @@ Jenkins job, Jenkins build pipeline, Jenkins deploy pipeline
 AWS Kubernetes Cluster (EKS), Ingress, HPA, Helm template, External DNS  
 AWS DynamoDB, Route53, ALB, ASG, S3 bucket  
 ArgoCD  
-Github repo  
-Dockerhub repo  
+Github  
+Dockerhub  
 Sonarqube  
 
 ## 1.4 Languages
-Terraform, YAML, Groovy, bash  
+Terraform, YAML, DSL, Groovy, Bash  
 
 ## 1.5 Related repos
 https://github.com/dragonflly/jenkinsPipeline.git  
@@ -31,7 +31,7 @@ https://github.com/dragonflly/ms-3.git
 AWS account  
 Github account  
 Dockerhub account  
-Knowledge of AWS, Kubernetes, Terraform, Jenkins, ArgoCD
+Basic knowledge of AWS, Kubernetes, Terraform, Jenkins, ArgoCD
 
 ## 2.2 Create AWS resource with Terraform
 Fork and clone your cicd repo
@@ -240,25 +240,87 @@ kubectl apply -f env-prod/microservice-1-prod.yaml
 
 # 3 CI/CD
 ## 3.1 Jenkins build
-Build spring boot microservice  
+- Create jenkins pipeline by jenkins job  
+Jenkins New Item -> Freestyle project -> OK  
+Source Code Management -> Git  
+```
+https://github.com/dragonflly/cicd.git
+```
+Build Steps -> Process Job DSLs  
+```
+jenkins-job/job_build.groovy
 ```
 
-```
+- Read all branches of microservice repo  
+![build](images/jenkins-build.png)  
+
+- Build stages  
+![build2](images/jenkins-build-2.png)  
+Clone selected microservice repo  
+Sonarqube scan  
+mvn build  
+Docker build  
+Login dockerhub  
+Push docker image into dockerhub  
+Write build history into AWS DynamoDB  
+
 
 ## 3.2 Jenkins deploy
+- Create jenkins pipeline by jenkins job  
+Jenkins New Item -> Freestyle project -> OK  
+Source Code Management -> Git  
+```
+https://github.com/dragonflly/cicd.git
+```
+Build Steps -> Process Job DSLs
+```
+jenkins-job/job_deploy.groovy
 ```
 
-```
+- Read selected microservice build history, choose image to deploy  
+![deploy](images/jenkins-deploy.png)  
+
+- Deploy microservice  
+![deploy2](images/jenkins-deploy-2.png)  
+Clone cicd repo  
+Change image ID  
+Github push  
+Create pull request if in product environment  
 
 ## 3.3 ArgoCD deploy
-```
+- ArgoCD polling cicd repo every 3 minutes  
+![argocd](images/argocd-1.png)
 
-```
+- Pods update to new docker image  
+![argocd](images/argocd-2.png)
 
 ## 3.4 verify microservice from web browser
 app1.ning-cicd.click  
 app1-dev.ning-cicd.click  
 app1-stage.ning-cicd.click  
 
+
+# 4 Cleanup
+```
+cd argocd/Project-A
+kubectl delete -f env-dev/microservice-1-dev.yaml  
+kubectl delete -f env-stage/microservice-1-stage.yaml  
+kubectl delete -f env-prod/microservice-1-prod.yaml
+kubectl delete -n env-dev ingress project-a-dev-ms-1
+kubectl delete -n env-dev service/project-a-ms-1 deployment.apps/ms-1 horizontalpodautoscaler.autoscaling/ms-1
+kubectl delete -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+
+cd aws/tools/
+terraform destroy -auto-approve
+
+cd ../External-DNS/
+terraform destroy -auto-approve
+
+cd ../LB-Controller/
+terraform destroy -auto-approve
+
+cd ../EKS-Cluster/
+terraform destroy -auto-approve
+```
 
 
