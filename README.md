@@ -31,7 +31,7 @@ https://github.com/dragonflly/ms-3.git
 AWS account  
 Github account  
 Dockerhub account  
-Knowledge of AWS, Kubernetes, Terraform, Jenkins, ArgoCD
+Basic knowledge of AWS, Kubernetes, Terraform, Jenkins, ArgoCD
 
 ## 2.2 Create AWS resource with Terraform
 Fork and clone your cicd repo
