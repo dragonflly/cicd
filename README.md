@@ -251,11 +251,11 @@ Build -> Process Job DSLs
 jenkins-job/job_build.groovy
 ```
 
-- Read all branches of microservice repo
-![build](images/jenkins-build.png)
+- Read all branches of microservice repo  
+![build](images/jenkins-build.png)  
 
 - Build stages  
-![build2](images/jenkins-build-2.png)
+![build2](images/jenkins-build-2.png)  
 Clone selected microservice repo  
 Sonarqube scan  
 mvn build  
@@ -278,7 +278,7 @@ jenkins-job/job_deploy.groovy
 ```
 
 - Read selected microservice build history, choose image to deploy  
-![deploy](images/jenkins-deploy.png)
+![deploy](images/jenkins-deploy.png)  
 
 - Deploy microservice  
 ![deploy2](images/jenkins-deploy-2.png)  
@@ -288,10 +288,10 @@ Github push
 Create pull request if in product environment  
 
 ## 3.3 ArgoCD deploy
-- ArgoCD polling cicd repo every 3 minutes
+- ArgoCD polling cicd repo every 3 minutes  
 ![argocd](images/argocd-1.png)
 
-- Pods update to new docker image
+- Pods update to new docker image  
 ![argocd](images/argocd-2.png)
 
 ## 3.4 verify microservice from web browser
