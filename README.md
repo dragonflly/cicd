@@ -246,7 +246,7 @@ Source Code Management -> Git
 ```
 https://github.com/dragonflly/cicd.git
 ```
-Build -> Process Job DSLs  
+Build Steps -> Process Job DSLs  
 ```
 jenkins-job/job_build.groovy
 ```
