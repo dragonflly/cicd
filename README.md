@@ -310,7 +310,7 @@ kubectl delete -n env-dev ingress project-a-dev-ms-1
 kubectl delete -n env-dev service/project-a-ms-1 deployment.apps/ms-1 horizontalpodautoscaler.autoscaling/ms-1
 kubectl delete -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 
-cd aws/tools/
+cd ../../aws/tools/
 terraform destroy -auto-approve
 
 cd ../External-DNS/
