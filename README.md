@@ -2,7 +2,7 @@
 ## 1.1 Demonstration
 Tutorial for build and deploy
 ```
-www.youtube.com/watch?v=kXYiU_JCYtU&list=PLeTAguQ5NROaYkrlKdWa21s9BofsHY5pL&index=57
+https://www.youtube.com/watch?v=1kUk-KrJ12U
 ```
 
 ## 1.2 Work flow
